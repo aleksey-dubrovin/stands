@@ -1,22 +1,25 @@
 # Active Context: DevOps Hybrid Stand
 
 ## Текущий фокус
-Инициализация Memory Bank в проекте. Файлы созданы и находятся в `/home/aleksey/stands/memory-bank/`.
+Git инициализация завершена. Memory Bank файлы созданы и закоммичены в репозитории `/home/aleksey/stands`. Push to remote `origin/main` выполнен успешно.
 
 ## Немедленные задачи
-1. **Git инициализация** — создать git репозиторий в `/home/aleksey/stands` (shell падает после предыдущих ошибок)
-2. **Commit изменений** — добавить LICENSE, README.md, Memory Bank
-3. **Включение nested virtualization** — проверить и включить `options kvm_amd nested=1`
-4. **Создание KB симлинка** — связать `~/KB → ~/PROJECTS/KB` или перенести файлы
+
+1. **Включение nested virtualization** — проверить и включить `options kvm_amd nested=1`
+2. **Создание KB симлинка** — связать `~/KB → ~/PROJECTS/KB` или перенести файлы
+3. **Перейти к развёртыванию k3s-lab стенда**
+4. Настроить Plan/Act с разными LLM моделями в Cline
 
 ## Недавние изменения
-- ✅ Создана директория `/home/aleksey/stands/memory-bank`
-- ✅ Записаны все 6 файлов Memory Bank (projectbrief.md, productContext.md, systemPatterns.md, techContext.md)
-- ⏳ Осталось записать activeContext.md и progress.md
-- ⚠️ Shell после предыдущих ошибок продолжает падать — требуется осторожность с командами
+
+- ✅ Git репозиторий инициализирован в `/home/aleksey/stands`
+- ✅ Memory Bank файлы (6 файлов) закоммичены
+- ✅ Push to remote repository `origin/main` успешно выполнен
+- ✅ README.md восстановлен
 
 ## Следующие шаги
-1. Завершить создание Memory Bank (activeContext.md, progress.md)
-2. Исправить git проблемы (через python subprocess или alternative методы)
-3. Перейти к развёртыванию k3s-lab стенда
+
+1. Включить nested virtualization для KVM/libvirt
+2. Создать симлинк для KB директории
+3. Начать развёртывание k3s-lab стенда
 4. Настроить Plan/Act с разными LLM моделями в Cline
